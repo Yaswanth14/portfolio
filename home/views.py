@@ -16,5 +16,7 @@ def projects(request):
     return render(request, 'projects.html')
 
 def contact(request):
+    if request.method == "POST":
+        print("This is a post")
     # return HttpResponse("This is my contactpage (/contact)")
     return render(request, 'contact.html')
