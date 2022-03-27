@@ -27,5 +27,5 @@ def contact(request):
         ins = Contact(name=name, email=email, phone=phone, desc=desc)
         ins.save()
         print("The data has been written to the db")
-    # return HttpResponse("This is my contactpage (/contact)")
+    # return HttpResponse("This is my contactpage Thank you! (/contact)")
     return render(request, 'contact.html')
