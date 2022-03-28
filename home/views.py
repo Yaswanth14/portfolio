@@ -10,7 +10,7 @@ def home(request):
 
 def about(request):
     # return HttpResponse("This is my aboutpage (/about)")
-    return render(request, 'about.html')
+    return render(request, 'home.html')
 
 def projects(request):
     # return HttpResponse("This is my projectspage (/projects)")

@@ -3,7 +3,6 @@
 
 {% block homeactive %} active {% endblock homeactive %}
 {% block title %}Home | YModepalli{% endblock title %}
-{% block pos %} position-relative {% endblock pos %}
 
 {% block body %}
 <!-- <div class="alert alert-info mb-0" role="alert">
@@ -49,12 +48,12 @@
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
-        <h1 class="mb-3">Yaswanth Modepalli</h1>
+        <h1 class="mb-3 display-2">Yaswanth Modepalli</h1>
         <h5 class="mb-4">
           Student developer, passionate about Web-Development and Problem-Solving
         </h5>
 
-        <a class="btn btn-outline-light btn-lg m-2" href="/contact" role="button" rel="nofollow">Message</a>
+        <a class="btn btn-outline-light btn-lg m-2" href="mailto: yaswanth14333@gmail.com" role="button" rel="nofollow">Send Email</a>
         <a class="btn btn-outline-light btn-lg m-2" href="https://ymodepalli.hashnode.dev" target="_blank"
           role="button">View Blog</a>
       </div>
@@ -64,51 +63,93 @@
 
 <!-- testing -->
 <div class="container my-3">
-  <h2 class="text-center my-3 py-3">A little about me</h2>
+  <h2 class="text-center display-4 my-3 py-3">About me</h2>
 
-  <h3 class="mb-3">Hello!</h3>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3 class="mb-3 display-6 h3">Hello!</h3>
+          <p class="h5">I am a sophomore computer science student at Gayatri Vidya Parishad college of engineering. I am deeply passionate about technologies
+            and software development. I believe in the power of student communities and peer learning. I love to participate in hackathons and other tech events
+            <br><br>Apart from curriculam I play Basketball, Badminton, watch webseries, sturdy about various business models and I love talking to people with common intrests...
+          </p><br>
+                
+        <div class="links row text-primary fa-2x">
+            
+            <!-- Facebook
+            <div class="col-sm">
+              <i class="fab fa-facebook-f"></i>
+            </div>  -->
 
-  <p>I am a sophmore at Gayatri Vidya Parishad college of engineering. I am deeply passionate about technologies
-    and software development. I believe in the power of student communities and peer learning. I love to participate in hackathons and other tech events</p>
+            <!-- Twitter -->
+            <div class="col-sm">
+              <a href="http://twitter.com/ymodepalli" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
 
-  <div class="row">
-    <div class="col mt-4">
-      <div class="card" style="width: 18rem;">
-        <img src="https://source.unsplash.com/500x300/?blogger,blog" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Blogger</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- Instagram -->
+            <div class="col-sm">
+              <a href="http://instagram.com/_yaswanth14" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Linkedin -->
+            <div class="col-sm">
+              <a href="http://linkedin.com/in/yaswanth14" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <!-- Github -->
+            <div class="col-sm">
+              <a href="http://github.com/yaswanth14" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm">
+          <h3 class="mb-3 display-6 h3">My Skills</h3>
+          
+          <h3 class="h4">Problem Solving</h3>
+          <div style="height: 25px;" class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <h3 class="h4">Full Stack Web</h3>
+          <div style="height: 25px;" class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 45%;"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <h3 class="h4">Data Science</h3>
+          <div style="height: 25px;" class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </div><br><br><br>
 
-    <div class="col mt-4">
-      <div class="card" style="width: 18rem;">
-        <img src="https://source.unsplash.com/500x300/?code,html" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Developer</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <div class="container">
+      <h2 class="text-center display-4 my-3 py-3">My Tech Stack</h2>
+
+      <div class="d-flex justify-content-between h3">
+        <div class="py-5"><img src="{% static 'img/icons/cpp.png' %}" alt="">  C++</div>
+        <div class="py-5"><img src="{% static 'img/icons/python.png' %}" alt=""> Python</div>
+        <div class="py-5"><img src="{% static 'img/icons/java.png' %}" alt=""> Java</div>
+        <div class="py-5"><img src="{% static 'img/icons/js.png' %}" alt=""> JavaScript</div>
       </div>
-    </div>
-
-    <div class="col mt-4">
-      <div class="card" style="width: 18rem;">
-        <img src="https://source.unsplash.com/500x300/?entertainment,fun" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Entertainer</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+      <div class="d-flex justify-content-between h3">
+        <div class="py-5"><img src="{% static 'img/icons/html.png' %}" alt="">  HTML</div>
+        <div class="py-5"><img src="{% static 'img/icons/css.png' %}" alt=""> CSS</div>
+        <div class="py-5"><img src="{% static 'img/icons/bootstrap.png' %}" alt=""> Bootstrap</div>
+        <div class="py-5"><img src="{% static 'img/icons/git.png' %}" alt=""> Git</div>
       </div>
-    </div>
+      <div class="d-flex h3">
+        <div class="py-5 mx-auto"><img src="{% static 'img/icons/github.png' %}" alt="">  GitHub</div>
+        <div class="py-5 mx-auto"><img src="{% static 'img/icons/django.png' %}" alt=""> Django</div>
+        <div class="py-5"><!-- <img src="{% static 'img/icons/bootstrap.png' %}" alt=""> Bootstrap --></div>
+        <div class="py-5"><!-- <img src="{% static 'img/icons/bootstrap.png' %}" alt=""> Bootstrap --></div>
+      </div>
+    </div><br><br><br>
 
-  </div>
+  
+
 </div>
 
 

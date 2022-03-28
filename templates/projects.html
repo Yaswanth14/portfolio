@@ -1,48 +1,105 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block projectsactive %} active {% endblock projectsactive %}
 {% block title %}Projects{% endblock title %}
-{% block pos %} position-absolute {% endblock pos %}
+
 {% block body %}
 
       <div class="container my-3">
-        <h2 class="text-center my-3 py-3">My Projects</h2>
+        <h2 class="text-center display-6 h3 my-3 py-3">My Projects</h2>
     
         <div class="row">
           <div class="col mt-4">
             <div class="card" style="width: 18rem;">
-              <img src="https://source.unsplash.com/500x300/?blogger,blog" class="card-img-top" alt="...">
+              <img src="{% static 'img/bday.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Blogger</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Birthday Card</h5>
+                <p class="card-text">This is a responsive birthday invitation card made with mobile first approach using html and css.</p>
+                <div class="d-flex justify-content-between h3">
+                  <a href="https://yaswanth14.github.io/html-css-projects/project-4%20Birthday%20card%20(responsive)/" target="_blank" class="btn btn-primary mx-auto">View Demo</a>
+                  <a href="https://github.com/Yaswanth14/html-css-projects/tree/main/project-4%20Birthday%20card%20(responsive)" target="_blank" class="btn btn-primary mx-auto">View Code</a>
+                </div>
               </div>
             </div>
           </div>
     
-          <div class="col mt-4">
-            <div class="card" style="width: 18rem;">
-              <img src="https://source.unsplash.com/500x300/?code,html" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Developer</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="col mt-4">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static 'img/parallax.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Parallax WebPage</h5>
+                  <p class="card-text">This is a parallax website with cool transition and design, made using html css and JavaScript.</p>
+                  <div class="d-flex justify-content-between h3">
+                    <a href="https://yaswanth14.github.io/html-css-projects/parallax-1/" target="_blank" class="btn btn-primary mx-auto">View Demo</a>
+                    <a href="https://github.com/Yaswanth14/html-css-projects/tree/main/parallax-1" target="_blank" class="btn btn-primary mx-auto">View Code</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
     
-          <div class="col mt-4">
-            <div class="card" style="width: 18rem;">
-              <img src="https://source.unsplash.com/500x300/?entertainment,fun" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Entertainer</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col mt-4">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static 'img/aircnc.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AirCnc</h5>
+                  <p class="card-text">This is a animal rental site made with responsivedesign as a clone of AirBnb. Made using html and css</p>
+                  <div class="d-flex justify-content-between h3">
+                    <a href="https://yaswanth14.github.io/html-css-projects/project-5%20AirCnc%20(responsive)/" target="_blank" class="btn btn-primary mx-auto">View Demo</a>
+                    <a href="https://github.com/Yaswanth14/html-css-projects/tree/main/project-5%20AirCnc%20(responsive)" target="_blank" class="btn btn-primary mx-auto">View Code</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          
         </div>
+
+        
+
+        <div class="row">
+          <div class="col mt-4">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'img/pricetable.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Price Table</h5>
+                <p class="card-text">This is a price table design made using bootstrap</p>
+                <div class="d-flex justify-content-between h3">
+                  <a href="https://yaswanth14.github.io/html-css-projects/Price-table%20(responsive)/" target="_blank" class="btn btn-primary mx-auto">View Demo</a>
+                  <a href="https://github.com/Yaswanth14/html-css-projects/tree/main/Price-table%20(responsive)/" target="_blank" class="btn btn-primary mx-auto">View Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col mt-4">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'img/register.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Registration Form</h5>
+                <p class="card-text">This is a responsive registration form with cool transition, made using html css and JavaScript.</p>
+                <div class="d-flex justify-content-between h3">
+                  <a href="https://yaswanth14.github.io/html-css-projects/registration-form/" target="_blank" class="btn btn-primary mx-auto">View Demo</a>
+                  <a href="https://github.com/Yaswanth14/html-css-projects/registration-form/" target="_blank" class="btn btn-primary mx-auto">View Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+            <div class="col mt-4">
+              <div class="card" style="width: 18rem;">
+                <img src="{% static 'img/chamelion.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Random chamelion</h5>
+                  <p class="card-text">This website generates a random color whenever you tap on the button and display as background</p>
+                  <div class="d-flex justify-content-between h3">
+                    <a href="https://yaswanth14.github.io/html-css-projects/html-css-projects/random-chamelion/" target="_blank" class="btn btn-primary mx-auto">View Demo</a>
+                    <a href="https://github.com/Yaswanth14/html-css-projects/tree/main/html-css-projects/random-chamelion/" target="_blank" class="btn btn-primary mx-auto">View Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
       </div>
      
       {% endblock body %}
